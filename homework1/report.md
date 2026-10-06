@@ -33,14 +33,12 @@ $$
 ```cpp
 #include <iostream>
 using namespace std;
-
 // 遞迴阿克曼函數
 int ackermann(int m, int n) { 
     if (m == 0) return n + 1;
     if (n == 0) return ackermann(m - 1, 1);
     return ackermann(m - 1, ackermann(m, n - 1));
 }
-
 // 非遞迴版本的阿克曼函數（使用自訂陣列模擬系統 Stack 呼叫堆疊）
 int ackermannnonrecursive(int m, int n) {
     int stack[100000]; // 建立一個陣列作為堆疊，用來儲存待處理的 m 值
@@ -80,7 +78,6 @@ int ackermannnonrecursive(int m, int n) {
     }
     return n;
 }
-
 int main() 
 {
     int m, n;   
