@@ -41,7 +41,7 @@ $$
 
 ---
 
-## 2. Algorithm Design & Programming
+## 2. 程式實作
 
 完整 C++ 原始碼如下:
 
