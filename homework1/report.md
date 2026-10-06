@@ -161,7 +161,6 @@ A(2, 2)[non-recursive] = 7
 #include <iostream>
 #include <string>
 using namespace std;
-
 // 遞迴函數（利用預設參數 i = 0 與 curr = ""）
 void powerset(const string& S, size_t i = 0, string curr = "") {
     // 遞迴基底：處理完所有字元，印出目前組合
@@ -184,7 +183,6 @@ void powerset(const string& S, size_t i = 0, string curr = "") {
     }
     powerset(S, i + 1, next);
 }
-
 int main() {
     string S;
     if (cin >> S) 
@@ -230,5 +228,4 @@ ab
 ## 申論及開發報告
 
 ### 選用遞迴與決策樹演算法的原因
-產生 Power Set 的方法有很多種（像是用 Bitmask 或迴圈），但我選擇用遞迴演算法。
-因為把每一個字元當成二元決策樹的一個分支（選擇要或不要），非常符合數學上子集合的定義。而且寫成遞迴程式碼很短、邏輯很直覺。雖然字串長度太長時會因為 $2^n$ 的關係跑很久，但針對一般課堂作業輸入的小字串，這個方法的寫法最簡單也最不容易寫錯。
+因為把每一個字元當成二元決策樹的一個分支（選擇要或不要），非常符合數學上子集合的定義。而且寫成遞迴程式碼很短、邏輯很直覺。雖然字串長度太長時會因為 $2^n$ 的關係跑很久，這個方法的寫法最簡單也最不容易寫錯。
