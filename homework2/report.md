@@ -200,5 +200,7 @@ int main()
 - Add運算輔助空間： $O(m+n)$ ，用於建立結果多項式c的動態陣列空間。
 
 ## 測試與驗證
+![圖片描述](<img width="359" height="327" alt="螢幕擷取畫面 2026-11-04 124431" src="https://github.com/user-attachments/assets/77bddb3d-e332-4a18-9e48-ba5f312534bd" />)
+
 
 ## 申論及開發報告
