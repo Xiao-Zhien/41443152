@@ -21,7 +21,9 @@
   4.動態記憶體管理(newTerm)：當陣列容量不足時，自動進行兩倍擴充(Capacity Doubling)。
 
 ### 解題策略
-  1.內部資料結構設計：計算兩個多項式的和。
+  1.內部資料結構設計：
+    - 使用Term類別儲存單一項目係數(coef)與指數(exp)。
+    - Polynomial類別內部維護動態陣列Term *termArry，並用terms記錄目前非零項數量、capacity記錄當前陣列大小。
   
   2.代入求值(Eval)：給定數值x，計算多項式的結果。
   
