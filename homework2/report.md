@@ -23,9 +23,9 @@
 ### 解題策略
   1.內部資料結構設計：
   
-  - 使用**Term**類別儲存單一項目係數(coef)與指數(exp)。
+  - 使用 **Term** 類別儲存單一項目係數(coef)與指數(exp)。
     
-  - **Polynomial**類別內部維護動態陣列Term *termArry，並用**terms**記錄目前非零項數量、**capacity**記錄當前陣列大小。
+  - **Polynomial** 類別內部維護動態陣列Term *termArry，並用 **terms** 記錄目前非零項數量、 **capacity** 記錄當前陣列大小。
   
   2.代入求值(Eval)：給定數值x，計算多項式的結果。
   
