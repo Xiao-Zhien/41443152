@@ -208,3 +208,5 @@ int main()
 1.使用到動態陣列擴充：多項式在輸入前無法預估項數大小，若寫死固定長度會浪費記憶體或造成溢位。採用倍數擴充策略（Capacity Doubling）可以在空間利用率與複製時間之間達到最佳平衡。
 
 2.遇到的問題：在封裝 Term 與 Polynomial 時，若將 Term 的成員 coef 與 exp 設為 private，當我在外部編寫 operator<< 輸出運算子試圖直接印出 p.termArray[i].coef 時，編譯器會報錯，說該私有成員無法存取。
+
+3.解決方法：在 Polynomial 中撰寫公開的 Getter 函式，讓外部的輸出函數透過公開介面安全地取得資料，維持物件導向封裝性。
