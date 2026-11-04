@@ -195,6 +195,10 @@ int main()
 - Eval運算： $O(n*log(exp))$ ，其中n為非零項數量，pow計算指數項需花費 $O(\log(exp))$ 的時間。
 - newTerm運算：平攤時間複雜度(Amortized Time Complexity)為 $O(\1)$ ，因為使用容量加倍(Capacity Doubling)策略。
 
+### 空間複雜度
+- 內部儲存： $O(n)$ ，其中n為多項式的非零項個數。
+- Add運算輔助空間： $O(m+n)$ ，用於建立結果多項式c的動態陣列空間。
+
 ## 測試與驗證
 
 ## 申論及開發報告
