@@ -200,7 +200,11 @@ int main()
 - Add運算輔助空間： $O(m+n)$ ，用於建立結果多項式c的動態陣列空間。
 
 ## 測試與驗證
+
 <img width="359" height="327" alt="螢幕擷取畫面 2026-11-04 124431" src="https://github.com/user-attachments/assets/77bddb3d-e332-4a18-9e48-ba5f312534bd" />
 
-
 ## 申論及開發報告
+
+1.使用到動態陣列擴充：多項式在輸入前無法預估項數大小，若寫死固定長度會浪費記憶體或造成溢位。採用倍數擴充策略（Capacity Doubling）可以在空間利用率與複製時間之間達到最佳平衡。
+
+2.遇到的問題：在封裝 Term（代表多項式單一項）與 Polynomial（多項式類別）時，若將 Term 的成員 coef 與 exp 設為 private，當我們在外部編寫 operator<< 輸出運算子試圖直接印出 p.termArray[i].coef 時，編譯器會報錯，提示該私有成員無法存取。
