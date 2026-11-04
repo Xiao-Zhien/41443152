@@ -8,7 +8,12 @@
   
   $p(x)=a_{0}x^{e_{0}} + a_{1}x^{e_{1}} + \dots + a_{n}x^{e_{n}}$
 
-  其中 $a_{i}$ 為非零的浮點數係數(float coefficient)
+  其中 $a_{i}$ 為非零的浮點數係數(float coefficient)， $a_{i}$ 為非負整數指數(non-negative integer exponent)
+  題目要求：
+  1.
+  2.
+  3.
+  4.
   
 ## 程式實作
 
