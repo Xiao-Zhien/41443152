@@ -22,6 +22,7 @@
 
 ### 解題策略
   1.內部資料結構設計：
+  
     - 使用Term類別儲存單一項目係數(coef)與指數(exp)。
     - Polynomial類別內部維護動態陣列Term *termArry，並用terms記錄目前非零項數量、capacity記錄當前陣列大小。
   
