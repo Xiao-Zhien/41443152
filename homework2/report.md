@@ -191,8 +191,8 @@ int main()
 ## 效能分析
 
 ### 時間複雜度
-- Add運算： $O(\m+n)$ ，其中m與n分別代表兩個多項式的非零項數量。由於採用雙指標線性掃描合併，只需掃描兩個陣列一次。
-- Eval運算： $O(\n*log(exp))$ ，其中n為非零項數量，pow計算指數項需花費 $O(\log(exp))$ 的時間。
+- Add運算： $O(m+n)$ ，其中m與n分別代表兩個多項式的非零項數量。由於採用雙指標線性掃描合併，只需掃描兩個陣列一次。
+- Eval運算： $O(n*log(exp))$ ，其中n為非零項數量，pow計算指數項需花費 $O(\log(exp))$ 的時間。
 - newTerm運算：平攤時間複雜度(Amortized Time Complexity)為 $O(\1)$ ，因為使用容量加倍(Capacity Doubling)策略。
 
 ## 測試與驗證
